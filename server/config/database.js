@@ -8,6 +8,4 @@ const config = {
     database: process.env.PGDATABASE
 }
 
-const pool = new pg.Pool(config)
-
-export {pool}
+export const pool = new pg.Pool(config)

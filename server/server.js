@@ -17,8 +17,9 @@ app.use(cors())
 
 app.use(express.json())
 
-app.use('/api/events', eventsRouter);      // Use the events router
-// app.use('/api/locations', locationsRouter); // Use the locations router
+app.use('/api', eventsRouter)
+
+
 
 if (process.env.NODE_ENV === 'development') {
     app.use(favicon(path.resolve('../', 'client', 'public', 'party.png')))
