@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
 // import Events from './pages/Events'
 import './App.css'
+import { getAllEvents } from './services/EventsAPI';
+
 
 const App = () => {
   let element = useRoutes([
@@ -32,6 +34,19 @@ const App = () => {
     //   element: <Events />
     // }
   ])
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const eventsData = await getAllEvents()
+        console.log(eventsData)
+      }
+      catch (error) {
+        throw error
+      }
+    })()
+  }, [])
+
 
   return (
     <div className='app'>
