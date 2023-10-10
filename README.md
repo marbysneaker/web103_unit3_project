@@ -35,8 +35,8 @@ Here's a walkthrough of implemented required features:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-[Imgur](https://submissions.us-east-1.linodeobjects.com/web103/wkDjj7Ex.gif)
-![My Imgur GIF](https://submissions.us-east-1.linodeobjects.com/web103/wkDjj7Ex.gif)
+[Imgur](https://imgur.com/a/RqzYED9.gif)
+![My Imgur GIF](https://imgur.com/a/RqzYED9.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here
